@@ -1,0 +1,25 @@
+{
+  "embedding": {
+    "model_dir": "/code/",
+    "embedding_model": "SGPT-125M-weightedmean-nli-bitfit",
+    "embedding_dimension": 768
+  },
+  "EASCfg": {
+    "url": "http://5395489936151166.cn-hongkong.pai-eas.aliyuncs.com/api/predict/glosoft_hk",
+    "token": "ZjViZjdhMTkxMmFhZGNhYWUwNTYzOWI3MjNmZDZlZGU3ZTcyMjBmOA=="
+  },
+  "ADBCfg": {
+    "PG_HOST": "gp-gs561c7u0k5lc9781o-master.gpdbmaster.singapore.rds.aliyuncs.com",
+    "PG_DATABASE": "",
+    "PG_USER": "glosoftcrm",
+    "PG_PASSWORD": "glosoft123!"
+  },
+  "create_docs":{
+    "chunk_size": 200,
+    "chunk_overlap": 0,
+    "docs_dir": "docs/",
+    "glob": "**/*"
+  },
+  "query_topk": 4,
+  "prompt_template": "no fabrication is allowed in the answer, please use bahasa indonesia for all the answer. \n=====\nKnown information:\n{context}\n=====\nUser question:\n{question}"
+}
